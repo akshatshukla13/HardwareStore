@@ -6,7 +6,9 @@ import dotenv from 'dotenv';
 dotenv.config(); // Load environment variables
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://hardware-store-bice.vercel.app'
+}));
 
 const PORT = process.env.PORT || 3000;
 
