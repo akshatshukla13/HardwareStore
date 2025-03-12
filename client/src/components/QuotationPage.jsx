@@ -101,8 +101,9 @@ function QuotationPage() {
                     </div>
 
                     {/* Customer-Asked Price in Items Table */}
+                    <h5 className="block text-sm font-medium text-gray-700">Make Your Custom Bid:-</h5>
                     <div className="grid grid-cols-4 gap-4 items-center mt-4">
-                        <h5 className="block text-sm font-medium text-gray-700">Make Your Custom Bid:</h5>
+                        
                         <input
                             type="text"
                             value={items[0].item}
