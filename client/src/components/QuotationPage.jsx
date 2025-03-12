@@ -99,11 +99,10 @@ function QuotationPage() {
                         <p className="text-lg font-semibold">₹{productRate}</p>
                         <p className="text-opacity-10 ">{items[0].item}</p>
                     </div>
-                    <br />
 
                     {/* Customer-Asked Price in Items Table */}
                     <div className="grid grid-cols-4 gap-4 items-center mt-4">
-                        <label className="inline text-sm font-medium text-gray-700">Make Your Custom Bid:</label>
+                        <h5 className="block text-sm font-medium text-gray-700">Make Your Custom Bid:</h5>
                         <input
                             type="text"
                             value={items[0].item}
