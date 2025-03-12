@@ -26,6 +26,7 @@ function App() {
     setLoading(true);
     try {
       const response = await fetch('https://hardware-store-server.vercel.app/api/products');
+      // const response = await fetch('http://localhost:3000/api/products');
       const data = await response.json();
       setProducts(data);
       setSearchResults(data);

@@ -93,8 +93,19 @@
 // export default ComparisonModal;
 
 import React from 'react';
+import {useNavigate} from "react-router-dom"
 
 function ComparisonModal({ product, similarProducts, onClose }) {
+
+    const navigate = useNavigate()
+
+    function handleQuotation(){
+        console.log(product);
+        
+        navigate(`/quotation?_id=${product._id}&product=${product.Product_Name}&size=${product.Product_Size}&rate=${product.Rate}`);
+
+    }
+
     return (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50 overflow-auto">
             <div className="bg-gray-900 p-6 rounded-lg w-full max-w-6xl relative overflow-hidden">
@@ -122,7 +133,7 @@ function ComparisonModal({ product, similarProducts, onClose }) {
                         {/* Generate Quotation Button */}
                         <div className="mt-6 text-center">
                             <button
-                                onClick={() => window.location.href = `https://example.com?product=${product.Product_Name}&rate=${product.Rate}`}
+                                onClick={() => {handleQuotation()}}
                                 className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-300 transition-colors duration-200"
                             >
                                 Generate Quotation
