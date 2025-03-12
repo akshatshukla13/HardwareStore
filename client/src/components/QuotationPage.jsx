@@ -171,7 +171,7 @@ function QuotationPage() {
                 </form>
             ) : (
                 <div className="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
-                    <h2 className="text-2xl font-bold text-center mb-6">Quotation</h2>
+                    <h2 className="text-2xl font-bold text-center mb-6">Generated Quotation</h2>
 
                     <div className="flex justify-between items-center mb-6">
                         <div>
