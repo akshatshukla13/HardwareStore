@@ -102,6 +102,7 @@ function QuotationPage() {
 
                     {/* Customer-Asked Price in Items Table */}
                     <div className="grid grid-cols-4 gap-4 items-center mt-4">
+                        <label className="block text-sm font-medium text-gray-700">Make Your Custom Bid:</label>
                         <input
                             type="text"
                             value={items[0].item}
